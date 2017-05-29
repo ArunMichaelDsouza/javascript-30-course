@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Drum Kit</title>
+	<meta charset="utf-8">
+	<style>
+		.key {
+			display: inline-block;
+			padding: 20px;
+			background-color: #eaeaea;
+			border: 1px solid #8a8a8a;
+			transition: all ease-in-out .05s;
+		}
+		.playing {
+			transform: scale(1.1);
+			box-shadow: 0px 0px 10px yellow;
+		}
+	</style>
+</head>
+<body>
+	<div data-key="83"  class="key">
+		<kbd>S</kbd>
+	</div>
+	<div data-key="32" class="key">
+		<kbd>Space</kbd>
+	</div>
+
+	<audio data-key="83" src="sounds/snare.wav"></audio>
+	<audio data-key="32" src="sounds/kick.wav"></audio>
+	
+	<script src="app.js"></script>
+</body>
+</html>
